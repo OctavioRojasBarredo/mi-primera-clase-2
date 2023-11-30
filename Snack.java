@@ -11,6 +11,16 @@ public class Snack {
         precio = precioDeSnack;
         bajoEnCalorias = bajoEnCalorias;
     }
+    
+    public void imprimirEstado(){
+        System.out.println("Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + bajoEnCalorias);
+    }
+    
+    public String devolverEstado(){
+        String estado;
+        estado = "Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + bajoEnCalorias;
+        return estado;
+    }
 
     public String getMarca() {
         return marca;
