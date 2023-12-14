@@ -2,6 +2,10 @@
 comment0.target=Snack
 comment1.params=precioDeSnack\ marcaDeSnack
 comment1.target=Snack(int,\ java.lang.String)
+comment10.params=
+comment10.target=boolean\ getPatatas()
+comment11.params=sonPatatas
+comment11.target=void\ setPatatas(boolean)
 comment2.params=
 comment2.target=void\ imprimirEstado()
 comment3.params=
@@ -18,4 +22,4 @@ comment8.params=cantidadDescuento
 comment8.target=void\ descontarPrecio(int)
 comment9.params=
 comment9.target=void\ esBajoEnCalor\u00EDas()
-numComments=10
+numComments=12

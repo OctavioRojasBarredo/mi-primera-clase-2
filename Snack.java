@@ -92,7 +92,7 @@ public class Snack {
         return patatas;
     }
 
-    public void setPatatas(sonPatatas){
+    public void setPatatas(boolean sonPatatas){
         patatas = sonPatatas;
     }
 
