@@ -5,20 +5,57 @@ public class Snack {
     private int precio;
     // Dice si es bajo en calorías o no
     private boolean bajoEnCalorias;
+    // Dice si son patatas o no
+    private boolean patatas;
 
     public Snack (int precioDeSnack, String marcaDeSnack) {
         marca = marcaDeSnack;
         precio = precioDeSnack;
         bajoEnCalorias = bajoEnCalorias;
+        patatas = true;
     }
-    
+
     public void imprimirEstado(){
-        System.out.println("Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + bajoEnCalorias);
+        String patatasNuevo;
+        String caloriasNuevo;
+
+        if (patatas = true){
+            patatasNuevo = "Sí";
+        }
+        else {
+            patatasNuevo = "No";
+        }
+
+        if (bajoEnCalorias = true){
+            caloriasNuevo = "Sí";
+        }
+        else {
+            caloriasNuevo = "No";
+        }
+
+        System.out.println("Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo);
     }
-    
+
     public String devolverEstado(){
+        String patatasNuevo;
+        String caloriasNuevo;
+
+        if (patatas = true){
+            patatasNuevo = "Sí";
+        }
+        else {
+            patatasNuevo = "No";
+        }
+
+        if (bajoEnCalorias = true){
+            caloriasNuevo = "Sí";
+        }
+        else {
+            caloriasNuevo = "No";
+        }
+
         String estado;
-        estado = "Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + bajoEnCalorias;
+        estado = "Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo;
         return estado;
     }
 
@@ -49,6 +86,14 @@ public class Snack {
         else {
             bajoEnCalorias = true;
         }
+    }
+
+    public boolean getPatatas(){
+        return patatas;
+    }
+
+    public void setPatatas(sonPatatas){
+        patatas = sonPatatas;
     }
 
 }
