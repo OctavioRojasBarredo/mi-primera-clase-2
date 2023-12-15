@@ -3,6 +3,8 @@ public class Snack {
     private String marca;
     // Precio del snack
     private int precio;
+    // Cantidad de snacks que tiene cada bolsa
+    private int cantidad;
     // Dice si es bajo en calorías o no
     private boolean bajoEnCalorias;
     // Dice si son patatas o no
@@ -13,6 +15,7 @@ public class Snack {
         precio = precioDeSnack;
         bajoEnCalorias = bajoEnCalorias;
         patatas = true;
+        cantidad = 0;
     }
 
     public void imprimirEstado(){
@@ -33,7 +36,7 @@ public class Snack {
             caloriasNuevo = "No";
         }
 
-        System.out.println("Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo);
+        System.out.println("Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo + " | Cantidad en bolsa: " + cantidad);
     }
 
     public String devolverEstado(){
@@ -55,7 +58,7 @@ public class Snack {
         }
 
         String estado;
-        estado = "Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo;
+        estado = "Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo + " | Cantidad en bolsa: " + cantidad;
         return estado;
     }
 
@@ -95,5 +98,14 @@ public class Snack {
     public void setPatatas(boolean sonPatatas){
         patatas = sonPatatas;
     }
+    
+    public int getCantidad() {
+        return cantidad;
+    }
+    
+    public void setCantidad(int nuevaCantidad) {
+        cantidad = nuevaCantidad;
+    }
+    
 
 }
