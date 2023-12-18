@@ -3,62 +3,52 @@ public class Snack {
     private String marca;
     // Precio del snack
     private int precio;
-    // Cantidad de snacks que tiene cada bolsa
-    private int cantidad;
     // Dice si es bajo en calorías o no
     private boolean bajoEnCalorias;
     // Dice si son patatas o no
     private boolean patatas;
-
     public Snack (int precioDeSnack, String marcaDeSnack) {
         marca = marcaDeSnack;
         precio = precioDeSnack;
         bajoEnCalorias = bajoEnCalorias;
         patatas = true;
-        cantidad = 0;
     }
 
     public void imprimirEstado(){
         String patatasNuevo;
         String caloriasNuevo;
-
         if (patatas = true){
             patatasNuevo = "Sí";
         }
         else {
             patatasNuevo = "No";
         }
-
         if (bajoEnCalorias = true){
             caloriasNuevo = "Sí";
         }
         else {
             caloriasNuevo = "No";
         }
-
-        System.out.println("Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo + " | Cantidad en bolsa: " + cantidad);
+        System.out.println("Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo);
     }
 
     public String devolverEstado(){
         String patatasNuevo;
         String caloriasNuevo;
-
         if (patatas = true){
             patatasNuevo = "Sí";
         }
         else {
             patatasNuevo = "No";
         }
-
         if (bajoEnCalorias = true){
             caloriasNuevo = "Sí";
         }
         else {
             caloriasNuevo = "No";
         }
-
         String estado;
-        estado = "Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo + " | Cantidad en bolsa: " + cantidad;
+        estado = "Marca del snack: " + marca + "| Precio: " + precio + "€ | Bajo en calorías: " + caloriasNuevo + " | Son patatas: " + patatasNuevo;
         return estado;
     }
 
@@ -98,14 +88,5 @@ public class Snack {
     public void setPatatas(boolean sonPatatas){
         patatas = sonPatatas;
     }
-    
-    public int getCantidad() {
-        return cantidad;
-    }
-    
-    public void setCantidad(int nuevaCantidad) {
-        cantidad = nuevaCantidad;
-    }
-    
 
 }
